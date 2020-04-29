@@ -1099,9 +1099,11 @@ header label {
 }
 
 @media screen and (max-width: 479px) {
+    /*
     .main {
         padding-top: 40pt;
     }
+    */
     .navbar {
         display: none;
     }
@@ -1294,4 +1296,20 @@ header label {
 
 .highlight .code .emphasis {
     font-style: italic;
+}
+
+#illust:before{
+    content: '';
+    display: block;
+    width: 141px;
+    height: 104px;
+    margin:0px auto;
+    background: url(/image/kanahei.png) no-repeat;
+    background-size: auto 100%;
+    animation: nene .9s steps(10) infinite alternate;
+}
+@keyframes nene {
+    to {
+      background-position: -1410px 0;
+    }
 }
